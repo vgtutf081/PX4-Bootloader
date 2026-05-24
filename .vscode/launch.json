@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ST-Link (px4fmuv2)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/px4discovery_bl/px4discovery_bl.elf",
+
+            "device": "STM32F429ZI",
+            "runToMain": false,
+
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+
+            "searchDir": [
+                "/usr/share/openocd/scripts"
+            ],
+
+            "gdbPath": "/usr/bin/gdb-multiarch",
+
+            "openOCDLaunchCommands": [
+                "init",
+                "reset init"
+            ],
+
+            "postLaunchCommands": [
+                "monitor reset halt"
+            ],
+
+            "serverArgs": [
+                "-c", "gdb_port 3333",
+                "-c", "tcl_port 6666",
+                "-c", "telnet_port 4444"
+            ],
+
+            "showDevDebugOutput": true
+        }
+    ]
+}

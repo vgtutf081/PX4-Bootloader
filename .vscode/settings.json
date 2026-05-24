@@ -1,0 +1,24 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/obozh/PX4-Bootloader/build/kakutef7_bl",
+            "binaryPath": "/home/obozh/PX4-Bootloader/build/kakutef7_bl/kakutef7_bl.elf",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/home/obozh/PX4-Bootloader/build/omnibusf4sd_bl",
+            "binaryPath": "/home/obozh/PX4-Bootloader/build/omnibusf4sd_bl/omnibusf4sd_bl.elf",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/home/obozh/PX4-Bootloader/build/px4discovery_bl",
+            "binaryPath": "/home/obozh/PX4-Bootloader/build/px4discovery_bl/px4discovery_bl.elf",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/home/obozh/PX4-Bootloader/build/px4fmuv2_bl",
+            "binaryPath": "/home/obozh/PX4-Bootloader/build/px4fmuv2_bl/px4fmuv2_bl.elf",
+            "binaryArgs": []
+        }
+    ]
+}
